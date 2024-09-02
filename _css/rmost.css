@@ -1,0 +1,347 @@
+:root {
+  /*
+  "Wild Blue Yonder"
+  */
+  /* --myColor-00: #7f99b7;
+  --myColor-10: #728aa5;
+  --myColor-20: #667a92;
+  --myColor-30: #596b80;
+  --myColor-40: #4c5c6e;
+  --myColor-50: #404d5c;
+  --myColor-60: #333d49;
+  --myColor-70: #262e37;
+  --myColor-80: #191f25; */
+   /*
+  "Polo Blue"
+  */
+  /* --myColor-00: #82a0c3;
+  --myColor-10: #7590b0;
+  --myColor-20: #68809c;
+  --myColor-30: #5b7089;
+  --myColor-40: #4b6075;
+  --myColor-50: #415062;
+  --myColor-60: #34404e;
+  --myColor-70: #27303a;
+  --myColor-80: #1a2027; */
+  /*
+  "Sail"
+  */
+  --myColor-00: #a0cff8;
+  --myColor-10: #90badf;
+  --myColor-20: #80a6c6;
+  --myColor-30: #7091ae;
+  --myColor-40: #607c95;
+  --myColor-50: #50687c;
+  --myColor-60: #405363;
+  --myColor-70: #303e4a;
+  --myColor-80: #202932;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 20px;
+  color: #ecf5fe;
+  /* color: #f6fafe; */
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--myColor-00);
+  background-image: linear-gradient(
+      30deg,
+      var(--myColor-60),
+      var(--myColor-70),
+      var(--myColor-80) 50%
+    ),
+    linear-gradient(
+      270deg,
+      var(--myColor-60),
+      var(--myColor-70),
+      var(--myColor-80) 50%
+    );
+  padding: 0 0 0 2vw;
+}
+
+a:link {
+  color: var(--myColor-10);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--myColor-00);
+  background-color: var(--myColor-70);
+}
+a,
+a:active {
+  color: var(--myColor-20);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Site Header > */
+.mainHead {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+.companyTitle {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 2.5rem;
+}
+.companyLogo img {
+  width: 5rem;
+  height: 5rem;
+  padding: 0 1.5rem 0 3rem;
+}
+.companyProfession {
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 1rem;
+  max-width: 7.5rem;
+}
+/* Site Header < */
+
+
+/* Site Navigation > */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 25px;
+  background-color: var(--myColor-80);
+  font-size: 1.8rem;
+  margin-top: 20px;
+  /* border: 1px solid yellow; */
+}
+nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2vw 0 0;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: var(--myColor-70);
+}
+nav .home-link {
+  margin-right: auto;
+}
+nav svg {
+  fill: var(--myColor-10);
+}
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#sidebar-active {
+  display: none;
+}
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+/* Site Navigation < */
+
+
+.barHoriz {
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: var(--myColor-60);
+}
+.mainFooter {
+  font-size: 0.5rem;
+  color: var(--myColor-10);
+  padding: 0 0 5vw 2vw;
+}
+
+
+/* HOME Page > */
+.homeInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  flex-wrap: wrap;
+  gap: 5vw;
+  row-gap: 1vh;
+  margin-left: 1%;
+  /* border: 1px solid yellow; */
+}
+.homeWelcome {
+  max-width: 70%;
+  /* border: 1px solid green; */
+}
+.rmphoto img {
+  width: 20vw;
+  height: 27.77vw;
+  border-radius: 2%;
+}
+.licenses {
+  margin-top: 30px;
+  /* border: 1px solid red; */
+}
+.licenses ul {
+  list-style-type: none;
+}
+/* HOME Page < */
+
+
+/* OFFICE Page > */
+.officeInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  flex-wrap: wrap;
+  gap: 15%;
+  row-gap: 50px;
+  margin-left: 1%;
+}
+.officelinks a {
+  font-size: 1.5rem;
+}
+.map img {
+  width: 95vw;
+  height: 71.4vw;
+  border-radius: 1%;
+}
+/* OFFICE Page < */
+
+
+/* DIRECTIONS Page > */
+.directions ul {
+  padding: 15px;
+}
+/* DIRECTIONS Page < */
+
+
+/* FORMS Page > */
+.formsInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 30px;
+  margin-left: 1%;
+}
+.formsBody {
+  max-width: 40%;
+  /* border: 1px solid yellow; */
+}
+/* FORMS Page < */
+
+
+/* Insurance Page > */
+.insuranceInfo p {
+  margin-left: 80px;
+}
+.insuranceInfo ul {
+  margin-left: 40px;
+}
+/* Insurance Page < */
+
+
+/* FAQ Page > */
+.faqInfo {
+  margin-left: 10%;
+  max-width: 70%
+}
+.faqInfo ul {
+  margin-left: 40px;
+}
+/* FAQ Page < */
+
+
+@media (max-width: 851px) {
+  html {
+    font-size: 16px;
+  }
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 1rem;
+    right: -100%;
+    z-index: 10;
+    width: 30vw;
+
+    background-color: var(--myColor-80);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-out;
+  }
+  nav {
+    height: 1rem;
+    margin-top: 0;
+  }
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    /* width: 100%; */
+    padding: 20px 0px 0px 0px;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+  }
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 5px;
+    display: block;
+  }
+  #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .companyTitle {
+    font-size: 1.3rem;
+  }
+  .companyLogo img {
+    width: 3rem;
+    height: 3rem;
+    padding: 0 0.4rem 0 0.5rem;
+  }
+  .companyProfession {
+    font-size: 0.6rem;
+    max-width: 5.5rem;
+  }
+  .formsBody {
+    max-width: 80%;
+    margin-left: 3%;
+  }
+  .formsLinks {
+    margin-left: 3%;
+  }
+  .formsLinks p {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  .insuranceInfo p {
+    margin-left: 0;
+    /* font-size: 0.9rem; */
+  }
+  .faqInfo {
+    margin-left: 0;
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+}
