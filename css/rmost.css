@@ -130,9 +130,20 @@ nav a {
 }
 nav a:hover {
   background-color: var(--myColor-70);
+  /* border: 1px solid yellow; */
+}
+nav .active {
+  color: var(--myColor-00);
+  background-color: var(--myColor-50);
+  /* border: 1px solid yellow; */
 }
 nav .home-link {
   margin-right: auto;
+}
+nav .home-active {
+  margin-right: auto;
+  color: var(--myColor-00);
+  background-color: var(--myColor-60);
 }
 nav svg {
   fill: var(--myColor-10);
