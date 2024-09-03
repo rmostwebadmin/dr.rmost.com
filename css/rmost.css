@@ -1,8 +1,7 @@
 :root {
+  /*  "Wild Blue Yonder"  */
   /*
-  "Wild Blue Yonder"
-  */
-  /* --myColor-00: #7f99b7;
+  --myColor-00: #7f99b7;
   --myColor-10: #728aa5;
   --myColor-20: #667a92;
   --myColor-30: #596b80;
@@ -10,11 +9,12 @@
   --myColor-50: #404d5c;
   --myColor-60: #333d49;
   --myColor-70: #262e37;
-  --myColor-80: #191f25; */
-   /*
-  "Polo Blue"
+  --myColor-80: #191f25;
   */
-  /* --myColor-00: #82a0c3;
+  
+  /*  "Polo Blue"  */
+  /*
+  --myColor-00: #82a0c3;
   --myColor-10: #7590b0;
   --myColor-20: #68809c;
   --myColor-30: #5b7089;
@@ -22,10 +22,32 @@
   --myColor-50: #415062;
   --myColor-60: #34404e;
   --myColor-70: #27303a;
-  --myColor-80: #1a2027; */
-  /*
-  "Sail"
+  --myColor-80: #1a2027;
   */
+  --myColor-00: #97f0f1;
+  --myColor-10: #77ebed;
+  --myColor-20: #57e7e9;
+  --myColor-30: #38e3e5;
+  --myColor-40: #1cdadd;
+  --myColor-50: #18bbbd;
+  --myColor-60: #149c9e;
+  --myColor-70: #107d7e;
+  --myColor-80: #0c5d5e;
+  --myColor-90: #083e3f;
+
+  --myColor-00: #eaf2f8;
+  --myColor-10: #d4e6f1;
+  --myColor-20: #a9cce3;
+  --myColor-30: #7fb3d5;
+  --myColor-40: #5499c7;
+  --myColor-50: #2980b9;
+  --myColor-60: #2471a3;
+  --myColor-70: #1f618d;
+  --myColor-80: #1a5276;
+  --myColor-90: #154360;
+
+  /*  "Sail"  */
+  /*
   --myColor-00: #a0cff8;
   --myColor-10: #90badf;
   --myColor-20: #80a6c6;
@@ -35,6 +57,7 @@
   --myColor-60: #405363;
   --myColor-70: #303e4a;
   --myColor-80: #202932;
+  */
 }
 * {
   margin: 0;
@@ -66,7 +89,7 @@ body {
 }
 
 a:link {
-  color: var(--myColor-10);
+  color: var(--myColor-30);
   text-decoration: none;
   cursor: pointer;
 }
@@ -129,21 +152,20 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
+  color: var(--myColor-10);
   background-color: var(--myColor-70);
   /* border: 1px solid yellow; */
 }
 nav .active {
-  color: var(--myColor-00);
-  background-color: var(--myColor-50);
+  color: var(--myColor-10);
   /* border: 1px solid yellow; */
 }
 nav .home-link {
   margin-right: auto;
 }
 nav .home-active {
+  color: var(--myColor-10);
   margin-right: auto;
-  color: var(--myColor-00);
-  background-color: var(--myColor-60);
 }
 nav svg {
   fill: var(--myColor-10);
@@ -172,7 +194,7 @@ nav svg {
   height: 4px;
   margin-top: 5px;
   margin-bottom: 10px;
-  background-color: var(--myColor-60);
+  background-color: var(--myColor-70);
 }
 .mainFooter {
   font-size: 0.5rem;
